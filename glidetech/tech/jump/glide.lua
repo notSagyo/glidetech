@@ -16,17 +16,17 @@ function update(args)
   if (self.lastJump and mcontroller.yVelocity() < -20) then
 	mcontroller.setYVelocity(-20)
 
-	if self.lastRigt then
-		if mcontroller.xVelocity() < 0 then
-			mcontroller.setXVelocity(-mcontroller.xVelocity() * 0.5)
-		end
-		mcontroller.setXVelocity(mcontroller.xVelocity() + (3.5 * 0.16))
-	end
 	if self.lastLeft then
 		if mcontroller.xVelocity() > 0 then
-			mcontroller.setXVelocity(-mcontroller.xVelocity() * 0.5)
+			mcontroller.setXVelocity(-math.abs(mcontroller.xVelocity() * 0.5))
 		end
 		mcontroller.setXVelocity(mcontroller.xVelocity() - (3.5 * 0.16))
+	end
+	if self.lastRight then
+		if mcontroller.xVelocity() < 0 then
+			mcontroller.setXVelocity(math.abs(mcontroller.xVelocity() * 0.5))
+		end
+		mcontroller.setXVelocity(mcontroller.xVelocity() + (3.5 * 0.16))
 	end
   end
   
