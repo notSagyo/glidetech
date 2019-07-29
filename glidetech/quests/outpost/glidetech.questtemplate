@@ -1,0 +1,84 @@
+{
+  "id" : "glidetech",
+  "prerequisites" : [ "techscientist6" ],
+  "title" : "^orange;Air Glide Technology",
+  "text" : "We have new cutting-edge technology proven to be ^orange;extremely useful! ^white;You'll never have to worry again about falling from high places because your lack of skill! *ejm*. This technology... it's incredibly difficult and expensive to produce. ^green;Could you bring me ^orange;1 Diamond, 10 Copper Bars, 10 Silver Bars, 10 Gold Bars, 10 Iron Bars, 10 Tungsten Bars, 10 Titanium Bars and 10 Durasteel Bars^white;?",
+  "completionText" : "Maybe the diamond wasn't exactly necessary for the Tech... But thanks! ^orange;New technology is available^white;, go check it out!",
+  "moneyRange" : [500, 500],
+  "rewards" : [],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/outpost/techlab/techlabscientistportrait.png"} ],
+        "title" : "Elliott"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/outpost/techlab/techlabscientistportrait.png"} ],
+        "title" : "Elliott"
+      }
+    },
+    "requireTurnIn" : true,
+  "turnInEntityUid" : [ "techlabscientist", "techlabscientistshop" ],
+
+  "showTech" : [
+      "glide"
+    ],
+
+
+    "turnInDescription" : "Speak to ^orange;Elliott^reset; at the ^orange;Outpost^reset;",
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "diamond",
+        "count" : 1,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "copperbar",
+        "count" : 10,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "silverbar",
+        "count" : 10,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "goldbar",
+        "count" : 10,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "ironbar",
+        "count" : 10,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "tungstenbar",
+        "count" : 10,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "titaniumbar",
+        "count" : 10,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "durasteelbar",
+        "count" : 10,
+        "consume" : true
+      }
+    ]
+  }
+}
+

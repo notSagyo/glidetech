@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/offeredQuests/-",
+    "value": "glidetech"
+  },
+  {
+    "op": "add",
+    "path": "/turnInQuests/-",
+    "value": "glidetech"
+  }
+]

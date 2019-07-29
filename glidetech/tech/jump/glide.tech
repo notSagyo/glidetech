@@ -1,0 +1,17 @@
+{
+  "name" : "glide",
+  "type" : "legs",
+
+  "scripts" : ["/tech/jump/glide.lua"],
+  "animator" : "multijump.animation",
+
+  "description" : "Glide and slide across the sky!",
+  "shortDescription" : "Glide Jump",
+  "rarity" : "Legendary",
+  "icon" : "/tech/jump/glide.png",
+
+  "chipCost" : 32,
+
+  "multiJumpCount" : 3,
+  "multiJumpModifier" : 0.7
+}
