@@ -8,15 +8,5 @@
     "op": "add",
     "path": "/turnInQuests/-",
     "value": "glidetech"
-  },
-  {
-    "op": "add",
-    "path": "/offeredQuests/-",
-    "value": "glidetech2"
-  },
-  {
-    "op": "add",
-    "path": "/turnInQuests/-",
-    "value": "glidetech2"
   }
 ]
